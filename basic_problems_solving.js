@@ -20,6 +20,20 @@ function calculateMoney(ticketSale) {
 
 // Task Number -2
 
+// Problem-02: Good Name , Bad Name
+// ⚠️ Function Name Must be checkName()
+
+// সালমান ভাই ও রাশেদা ভাবীর ক োল জুড়ে এসেছে একটা পুত্র সন্তান । সালমান ভাই পুত্র সন্তানের একটা ভাল ো নাম
+// রাখতে চান । কিন্তু তাদের এলাকায় গ্রামের মানষুরা নাম কে ব্যাংগ করে উচ্চারন করে । যে মন কার ো নাম salman
+// হলে তারা বলে সালমাইন্যা । কার ো নাম jafor হলে তারা বলে জাফইর্যা । সালমান ভাই চান না তার পুত্র সন্তান কে
+// কেউ এভাবে ক্ষেপাক ।
+// সালমান ভাই দেখতে পেলেন যে যাদের নামের শেষে a, y, i , e , o , u, w থাকে তাদেরকে আসলে ক্ষেপান ো
+// যায় না । যমন Tonoy, utsho , Roide, shanto এসব ধরনের নাম গুল োকে ব্যাংগ করে উচ্চারন করা যায় না ।
+// এখন ত োমাকে সালমান ভাইর জন্য checkName() নামে একটা ফাংশন লিখে দিতে হবে । যেটা একটা স্ট্রি ং
+// ইনপুট নেবে । এবং ফাংশনটি চেক করে দেখবে নাম টি রাখা ভাল ো হবে না খারাপ হবে । ভাল ো হলে সে রিটার্ন
+// করবে Good Name আর নাম টি খারাপ হলে রিটার্ন করবে Bad Name
+
+
 function checkName(name) {
     if (typeof name !== 'string' || name === 'number') {
         return 'Invalid';
@@ -81,7 +95,7 @@ const mixedArray = [1, 'hello', 3.14, true, 42, 'world', null, undefined, 7];
 // পারবে ।
 
 function password(info) {
-    if(typeof info.name !== 'string' || typeof info.birthYear !== 'number' || typeof info.siteName !== 'string') {
+    if (typeof info.name !== 'string' || typeof info.birthYear !== 'number' || typeof info.siteName !== 'string') {
         return 'Error: invalid'
     }
     else {
@@ -89,7 +103,25 @@ function password(info) {
     }
 }
 
-const information = { name: "kolimuddin", birthYear: 1999, siteName: "google" };
-// const information = { name: "rahat", birthYear: 2002, siteName: "Facebook" };
+// const information = { name: "Afsana", birthYear: 1999, siteName: "google" };
+// const information = { name: "Joynul", birthYear: 2002, siteName: "Facebook" };
 // const information = { name: "toky", birthYear: 200, siteName: "Facebook" };
-console.log(password(information));
+// console.log(password(information));
+
+
+
+
+
+// Task Number -5
+
+// Problem 05 : Monthly Savings of a Freelancer
+// ⚠️ Function Name Must be monthlySavings()
+//ফ্রিল্যান্সার শাহেদ প্রতিমাসে বেশ কিছু পেমেন্ট ক্লায়েন্টদের থেকে পায় । কিন্তু পেমেন্ট এর কিছু ট্যাক্স পরিশ োধ
+//এবং নিজের লিভি ংকস্ট এর কারনে সে সেভি ংস করতে পারে না । তার সেভি ংস এর হিসেব করার জন্যে তাকে
+//monthlySavings() নামে একটি ফাংশন তৈরী করে দিতে যেটা ইনপুট হিসেবে নেবে একটি Array(প্রতি মাসে
+//পাওয়া সকল পেমেন্ট) এবং একটি Number(শাহেদের লিভি ং কস্ট) ।
+// শাহেদের যে সকল পেমেন্ট 3000 টাকা বা তার বেশি সে সকল পেমেন্ট থেকে ব্যাংক Tax হিসেবে ২০% টাকা কেটে
+// নেয় । এখন ম োট ইনকাম থেকে Tax গুল ো বাদ দিয়ে এবং Living cost বাদ দিয়ে বাকী যে টাকা থাকে সেটাই
+// হল ো শাহেদের সেভি ংস । অর্থাৎ ফাংশন টি শাহেদের সেভি ংস কে রিটার্ন করবে । যদি সেভি ংস করার মত ো টাকা না
+// থাকে অর্থাৎ সেভি ংস এর ভ্যালুযদি ০ এর চেয়ে কম হয় তাহলে ফাংশন টি রিটার্ন করবে একটি স্ট্রি ং তাহল ো “earn
+// more” ।
