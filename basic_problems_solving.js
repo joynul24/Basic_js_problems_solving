@@ -125,3 +125,26 @@ function password(info) {
 // হল ো শাহেদের সেভি ংস । অর্থাৎ ফাংশন টি শাহেদের সেভি ংস কে রিটার্ন করবে । যদি সেভি ংস করার মত ো টাকা না
 // থাকে অর্থাৎ সেভি ংস এর ভ্যালুযদি ০ এর চেয়ে কম হয় তাহলে ফাংশন টি রিটার্ন করবে একটি স্ট্রি ং তাহল ো “earn
 // more” ।
+
+
+const salary = [ 6000, 5000, 9000];
+// const salary = [ 9000 , 20000 , 3400];
+// const livingCost = 5000;
+const livingCost = 10000;
+
+function monthlySavings(array, livingCost) {
+    let savings = 0;
+    for (const number of array) {
+        if (number >= 3000) {
+            const taxFee = number - 600;
+            const remaining = taxFee - livingCost;
+            savings += remaining;
+        }
+    }
+    if(savings < 0){
+        return 'earn more'; 
+    }
+    return savings;
+}
+
+// console.log(monthlySavings(salary, livingCost));
