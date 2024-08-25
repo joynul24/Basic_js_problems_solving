@@ -15,6 +15,7 @@ function calculateMoney(ticketSale) {
 }
 
 // console.log(calculateMoney(-10));
+// console.log(calculateMoney(10));
 
 
 
